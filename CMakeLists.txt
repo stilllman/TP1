@@ -1,0 +1,24 @@
+
+CMAKE_MINIMUM_REQUIRED( VERSION 3.16 )
+
+PROJECT( TestCompil VERSION 1.0.0 )
+
+MESSAGE( STATUS "**** Configuring TestCompil version ${TestCompil_VERSION} ****")
+
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+SET( CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -Werror -Wno-deprecated" )
+SET( CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wall -Wno-unused -Wno-uninitialized" )
+
+SET( EXECUTABLE_OUTPUT_PATH ${TestCompil_BINARY_DIR}/bin/${CMAKE_BUILD_TYPE} )
+SET( LIBRARY_OUTPUT_PATH ${EntrainementJaponais_BINARY_DIR}/lib/${CMAKE_BUILD_TYPE} )
+
+SET( CMAKE_AUTOMOC ON )
+SET( CMAKE_AUTORCC ON )
+FIND_PACKAGE( Qt6 REQUIRED COMPONENTS Core Widgets )
+
+enable_testing()
+
+ADD_SUBDIRECTORY( src )
+ADD_SUBDIRECTORY( test_unit )
