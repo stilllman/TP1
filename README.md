@@ -13,15 +13,17 @@
   * Installation personnalisée
   * Choose a MinGW version
   * Choose cmake if not alreay installed
-  * Choose ninja
 
 ## Configuration
+```console
 mkdir build_debug
 cd build_debug
 cmake -DCMAKE_BUILD_TYPE=Debug -G "MinGW Makefiles" ..
 cmake --build .
-
+```
 
 ## Run
+```console
 ctest => one test successful
 .\bin\Debug\TestCompil.exe => UI shows
+```
