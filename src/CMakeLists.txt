@@ -8,7 +8,6 @@ SET( FENETRE_PRINCIPALE_SRC FenetrePrincipale/FenetrePrincipale.cpp FenetrePrinc
 SET( MODULE2_SRC module2/module2_fichier1.cpp )
 
 ADD_LIBRARY( src
-             SHARED
              ${FENETRE_PRINCIPALE_SRC} ${MODULE2_SRC}
              resources/resource.qrc
            )
