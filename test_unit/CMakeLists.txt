@@ -22,5 +22,16 @@ target_link_libraries(
   GTest::gtest_main
 )
 
+add_executable(
+  cpp_test
+  class_modelisation_test.cpp
+)
+target_link_libraries(
+  cpp_test
+  src
+  GTest::gtest_main
+)
+
 include(GoogleTest)
 gtest_discover_tests(hello_test)
+gtest_discover_tests(cpp_test)
