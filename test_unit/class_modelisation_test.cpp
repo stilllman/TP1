@@ -2,7 +2,7 @@
 #include <gtest/gtest.h>
 
 #include <tp1_cpp/Arbre.hpp>
-#include <tp1_cpp/FabriqueVegetaux.hpp>
+#include <tp1_cpp/FabriqueVegetaux.hpp> // Ce fichier n'existe pas
 #include <tp1_cpp/Fleur.hpp>
 #include <tp1_cpp/Vegetal.hpp>
 
